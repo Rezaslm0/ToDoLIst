@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#4396f6, #85cbf9);
+    display: flex;
+    flex-direction: column;
+    height: 230vh;
+}
+header li , header span {
+    font-family: monospace;
+    margin-right: 45px;
+    list-style-type:none;
+    background: linear-gradient(90deg ,#93cef6 , white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+header li:hover {
+   transform: scale(1.2);
+   transition-duration: .3s;
+}
+header {
+    width: 100%;
+}
+section:last-of-type {
+    float: right;
+}
+section:first-of-type {
+    float: left;
+    margin-left: 60px;
+    margin-top: 4%;
+}
+header span {
+    font-size: 50px;
+    font-family:Alegraya;
+    font-weight: 600;
+}
+@font-face {
+    font-family: Alegraya;
+    src: url(./../font/Alegreya/Alegreya-Regular.ttf);
+}
+#title {
+    color: white;
+    margin-left: 20%;
+    font-size:60px ;
+    margin-bottom: 30px;
+}
+main {
+    margin-top: 15%;
+   
+}
+ main > div > p {
+    background: linear-gradient(90deg ,#93cef6 , white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 500px;
+    margin-left: 2%;
+}
+#desc1 {
+    display: inline-block;
+    margin-left: 20%;
+    font-size: 20px;
+}
+main > div {
+    margin-bottom: 8%;
+}
+main {
+    position: relative;
+}
+#start-task-manger-button {
+    text-decoration: none;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: -5%;
+    right: 18%;
+    --g: 4px;    
+    --b: 12px;    
+    --c: white; 
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  #start-task-manger-button:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+    box-shadow: 0px 0px 10px 2px white;
+  }
+  @keyframes changeColor {
+    50% {color : #2079b4}
+  }
+  
+#main2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+#info {
+    box-shadow: 0px 0px 10px 3px white;
+    width: max-content;
+}
+#members {
+    box-shadow: 0px 0px 10px 3px white;
+    width: max-content;
+}
+#contactUs {
+    box-shadow: 0px 0px 10px 3px white;
+    width: max-content;
+}
+#main2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+#main2 img:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+    box-shadow: 0px 0px 15px 3px white;
+}
+#main2 a {
+    width: max-content;
+}
+#main2 > p {
+    display: block;
+}
+#main2 div div p {
+    background: linear-gradient(90deg ,#93cef6 , white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin-top: 40px;
+}
+#main2 div div {
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-left: 60px;
+    width: 270px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px  #2079b4;
+}
+#main3 div {
+    background-color:#4396f6;
+}
+#main3 a {
+    color: white;
+    text-decoration: none;
+}
+#main3 {
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.736);
+}
+input::placeholder {
+    color:  #2079b4;
+}
+#contactBox {
+    width: 700px;
+    height: 300px;
+    position: relative;
+    padding: 20px;
+    margin-top: 30px;
+}
+#numbers {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#numbers a {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.853);
+}
+#submit {
+    background: linear-gradient( #0076fd ,   #76b1f5 );
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 300px;
+}
+#contactBox:hover {
+    box-shadow: 0px 0px 10px 2px white;
+    transition-duration: .2s;
+}

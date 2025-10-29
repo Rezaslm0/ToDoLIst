@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4a90e2, #007acc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80%;
+}
+
+.task-input-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 45%; 
+    height: 30vh; 
+}
+.task-list-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 45%; 
+    height: 80vh;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-input input {
+    width: 70%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.task-input button {
+    width: 25%;
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    overflow-y: auto; /* Scrollable task list */
+    max-height: 60vh; /* Limit height of task list to 60% of the container */
+    padding-right: 10px;
+}
+
+/* Custom scroll bar styling for the task list */
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.task-buttons button:hover {
+    color: #32CD32;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Taskbutton{
+  padding: 25px 30px;
+  background-color: #050801;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Taskbutton:hover{
+    background: #03f453;
+    color: #050801;
+    box-shadow: 0 0 5px #08a73d,
+                0 0 25px #08a73d,
+                0 0 50px #08a73d,
+                0 0 200px #08a73d;
+    
+}
+.allBtn:hover{
+    background: #bbe66c;
+    color: #050801;
+    box-shadow: 0 0 5px #bbe66c,
+                0 0 25px #bbe66c,
+                0 0 50px #bbe66c,
+               
+}
+
+.allBtn{
+    padding: 25px 30px;
+    background-color: #64a7e3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+.activeBtn {
+    padding: 25px 30px;
+    background-color: #64a7e3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.activeBtn:hover{
+    background: #09b2be;
+    color: #050801;
+    box-shadow: 0 0 5px #09b2be,
+                0 0 25px #09b2be,
+                0 0 50px #09b2be,
+               
+}
+.completedBtn {
+    padding: 25px 30px;
+    background-color: #64a7e3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.completedBtn:hover {
+    background: #09be45;
+    color: #050801;
+    box-shadow: 0 0 5px #09be45,
+                0 0 25px #09be45,
+                0 0 50p
+}
