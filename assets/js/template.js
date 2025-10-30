@@ -25,7 +25,7 @@ export function template_landingPage() {
             <div>
             <div>
                 <a href=""
-                ><img id="Prayani" src="/src/assets/images/Prayani.jpg" alt=""
+                ><img id="Prayani" src="/assets/images/Prayani.jpg" alt=""
                 /></a>
                 <p>
                 Pouria Rayani<br />ROLE: Front-end Developer.<br />TASK:
@@ -35,7 +35,7 @@ export function template_landingPage() {
 
             <div>
                 <a href=""
-                ><img id="Erayani" src="/src/assets/images/Erayani.jpg" alt=""
+                ><img id="Erayani" src="/assets/images/Erayani.jpg" alt=""
                 /></a>
                 <p>
                 Elahe Rayani<br />ROLE: Front-end Developer.<br />TASK: HTML &
@@ -45,7 +45,7 @@ export function template_landingPage() {
 
             <div>
                 <a href="https://github.com/Rezaslm0"
-                ><img src="/src/assets/images/reza.jpg" alt=""
+                ><img src="/assets/images/reza.jpg" alt=""
                 /></a>
                 <p>Reza Salimi<br />ROLE: Front-end Developer.<br />TASK:Java Script</p>
             </div>
