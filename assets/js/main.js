@@ -1,2 +1,2 @@
-import { render_landingPage } from './render.js'
-render_landingPage()
+import { render_landingPage } from "./render.js";
+render_landingPage();
